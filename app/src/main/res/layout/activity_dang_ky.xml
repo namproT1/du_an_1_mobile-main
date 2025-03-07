@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nenlogin"
+    android:gravity="center">
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng Ký"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edtEmail_dk"
+        android:layout_width="358dp"
+        android:layout_height="55dp"
+        android:autofillHints=""
+        android:hint="Nhập tên đăng ký"
+        android:background="@drawable/edit_text_border"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/edtPass_dk"
+        android:layout_width="358dp"
+        android:layout_height="55dp"
+        android:autofillHints="" android:hint="Nhập mật khẩu "
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edit_text_border"
+        android:textColor="@color/black"
+        android:drawableEnd="@drawable/mat"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        />
+
+
+    <EditText
+        android:id="@+id/edtPassNhapLai_dk"
+        android:layout_width="358dp"
+        android:layout_height="55dp"
+        android:autofillHints="" android:hint="Mật khẩu nhập lại"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@drawable/edit_text_border"
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/mat"
+        android:layout_marginBottom="30dp"
+        />
+
+    <Button
+        android:id="@+id/btnDangKyMoi"
+        android:layout_width="358dp"
+        android:layout_height="55dp"
+        android:text="Đăng ký"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#4CAF50"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn có tài khoản rồi?  "
+
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F19252"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Đăng nhập"
+
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

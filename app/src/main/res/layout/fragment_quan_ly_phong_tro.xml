@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.QuanLyPhongTroFragment">
+
+    <!-- Toolbar with back button and title -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/your_primary_color">
+
+        <!-- Back button icon -->
+        <ImageView
+            android:id="@+id/imgBackQuanLiPhongTro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lý phòng trọ"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium" />
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!-- RecyclerView to display list of rooms -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDanhSachPhong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+
+        <!-- Floating Action Button with a plus icon at the bottom-left, over the RecyclerView -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnThemPhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+
+            android:src="@android:drawable/ic_input_add"
+            android:backgroundTint="@color/your_primary_color" />
+
+    </FrameLayout>
+</LinearLayout>

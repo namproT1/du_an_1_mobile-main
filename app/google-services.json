@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "250523984785",
+    "project_id": "duanquanlynhatro",
+    "storage_bucket": "duanquanlynhatro.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250523984785:android:08fa1565e86b0a2b103030",
+        "android_client_info": {
+          "package_name": "com.nhom3.bduan1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGIdxOpx35lrk8ZN0EjC9bW9Ai3uhn-Go"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Mục thứ nhất -->
+    <item
+        android:id="@+id/item1"
+        android:icon="@drawable/icon_home_2"
+        android:title=""
+        />
+
+    <!-- Mục thứ hai -->
+    <item
+        android:id="@+id/item2"
+        android:icon="@drawable/icon_notification"
+        android:title=""
+    />
+</menu>

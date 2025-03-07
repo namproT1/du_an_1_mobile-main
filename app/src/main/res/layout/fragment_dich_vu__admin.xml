@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+
+>
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/your_primary_color" >
+
+
+        <!-- Back button icon -->
+        <ImageView
+            android:id="@+id/imgQuanLiDichVuAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+
+            />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lý dịch vụ"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+    <!-- Tiền điện -->
+    <TextView
+
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvTienDien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiền điện(4.000đ/kwh)"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edt_tienDien_hoadon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="Nhập số tiền điện"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- Tiền nước -->
+    <TextView
+        android:id="@+id/tvTienNuoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiền nước(30.000đ/khối)"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edtTienNuoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="Nhập số tiền nước"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:background="@android:drawable/editbox_background"/>
+
+
+    <!-- Tiền mạng -->
+    <TextView
+        android:id="@+id/tvTienMang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiền mạng(100.000đ/phòng)"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edtTienMang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="Nhập số tiền mạng"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- Tiền thang máy -->
+    <TextView
+        android:id="@+id/tvTienThangMay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiền thang máy(100.000đ/phòng)"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edtTienThangMay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="Nhập số tiền thang máy"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- Tiền rác -->
+    <TextView
+        android:id="@+id/tvTienRac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiền rác(30.000đ/người)"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/edtTienRac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="Nhập số tiền rác"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:background="@android:drawable/editbox_background"/>
+    <Button
+        android:id="@+id/btnCapNhatGiaDichVu"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#03A9F4"
+        android:layout_width="300dp"
+        android:text="Cập nhật hợp đồng"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

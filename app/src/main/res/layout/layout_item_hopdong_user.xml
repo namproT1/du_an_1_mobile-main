@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment_user">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hình ảnh phòng"
+                android:layout_marginStart="20dp"
+                android:textColor="#343131"
+                android:textSize="20sp"/>
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv1"
+                android:src="@drawable/img_room"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ"
+                android:layout_below="@+id/img1"
+                android:layout_marginStart="20dp"
+                android:textColor="#343131"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_below="@+id/tv2"
+                android:background="@drawable/custom_tv"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvTenPhongUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phòng: P101"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Địa chỉ: Chung cư mini Poly-13 phố Trịnh Văn Bô, phường Phương Canh, quận Nam Từ Liêm, TP Hà Nội"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời gian thuê"
+                android:layout_below="@+id/l2"
+                android:layout_marginStart="20dp"
+                android:textColor="#343131"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:id="@+id/l3"
+                android:layout_below="@+id/tv3"
+                android:background="@drawable/custom_tv"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvNgayBatDauUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày bắt đầu: 01/01/2023"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/tvNgayKetThucUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày kết thúc: 01/02/2023"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiền phòng và các khoản phí"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_below="@id/l3"
+                android:textColor="#343131"/>
+
+
+            <LinearLayout
+                android:id="@+id/l5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/custom_tv"
+                android:padding="10dp"
+                android:layout_below="@id/tv4"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="15dp"
+                android:divider="@android:color/darker_gray"
+                android:showDividers="middle">
+
+                <!-- Tiền phòng -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tiền phòng"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+
+                    <TextView
+                        android:id="@+id/tvTienPhongUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.000.000 VND / tháng"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+                </LinearLayout>
+
+                <!-- Tiền cọc -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tiền cọc"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+
+                    <TextView
+                        android:id="@+id/tvTienCocUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9.000.000 VND"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+                </LinearLayout>
+
+                <!-- Tiền điện -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tiền điện"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+
+                    <TextView
+                        android:id="@+id/tvTienDienUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.000 VND / 1 Kwh"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+                </LinearLayout>
+
+                <!-- Tiền nước -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tiền nước"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+
+                    <TextView
+                        android:id="@+id/tvTienNuocUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20.000 VND / 1 người"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tiền mạng"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+
+                    <TextView
+                        android:id="@+id/tvTienMangUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100.000 VND / 1 người"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tiền thang máy"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+
+                    <TextView
+                        android:id="@+id/tvTienThangMayUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50.000 VND / 1 người"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tiền rác"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+
+                    <TextView
+                        android:id="@+id/tvTienRacUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30.000 VND / 1 người"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+                </LinearLayout>
+
+                <!-- Thêm các mục khác tương tự -->
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Người thuê"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_below="@id/l5"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/custom_tv"
+                android:padding="10dp"
+                android:layout_below="@id/tv6"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="15dp"
+                android:divider="@android:color/darker_gray"
+                android:showDividers="middle">
+
+                <!-- Tiền phòng -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Họ tên"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+
+                    <TextView
+                        android:id="@+id/tvTenUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trần Hà Linh"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+                </LinearLayout>
+
+                <!-- Tiền cọc -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Email"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+
+                    <TextView
+                        android:id="@+id/tvEmailUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0123456789"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Số người thuê"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+
+                    <TextView
+                        android:id="@+id/tvSoNguoiThueUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 người"
+                        android:textSize="20sp"
+                        android:textColor="#343131" />
+
+                </LinearLayout>
+                <!-- Thêm các mục khác tương tự -->
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

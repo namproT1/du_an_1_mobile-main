@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xuất hóa đơn phòng"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_marginBottom="20dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#F9F9F9">
+
+
+
+            <!-- Tên phòng -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên phòng:"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:id="@+id/edt_phongHoaDon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:enabled="false"
+                android:padding="10dp" />
+
+            <!-- Điện sử dụng -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá phòng:"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:id="@+id/edt_giaPhong_hoadon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:enabled="false"
+                android:inputType="number"
+                android:padding="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số điện sử dụng:"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:id="@+id/edt_soDien_hoadon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="Nhập số điện (kWh)"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <!-- Giá phòng -->
+
+
+            <!-- Tiền điện/1 kWh -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tiền mạng / phòng "
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:id="@+id/edtTienMang_hoaDon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:enabled="false"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Khối nước:"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:id="@+id/edt_tienNuoc_hoadon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="Nhập số khối nước"
+                android:inputType="number"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:id="@+id/tvThangMay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tiền thang máy"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:id="@+id/edtTienThangMay_hoaDon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:enabled="false"
+                android:inputType="number"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:id="@+id/tvTienRacz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tiền rác(/người)"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:id="@+id/edtTienRac_hoaDon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:enabled="false"
+                android:inputType="number"
+                android:padding="10dp" />
+
+
+            <!-- Số người đang ở -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số người thuê"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp" />
+            <EditText
+                android:id="@+id/edt_soNguoi_hoadon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:enabled="false"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <!-- Nút xuất hóa đơn -->
+            <Button
+                android:id="@+id/btnXuatHoaDon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Xuất hóa đơn"
+                android:background="#4CAF50"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:padding="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

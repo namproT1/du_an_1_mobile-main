@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.BillFragment">
+
+    <TextView
+        android:id="@+id/tv111"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3999EB"
+        android:text="Hoá đơn"
+        android:textColor="#F4F4F4"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="30sp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvBill"
+        android:padding="20dp"
+        android:layout_below="@id/tv111"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

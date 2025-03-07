@@ -1,0 +1,80 @@
+<!-- activity_doi_mat_khau.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nendangky"
+    android:gravity="center
+"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đổi mật khẩu"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp"
+
+        android:gravity="center" />
+
+
+
+
+    <EditText
+        android:id="@+id/edMatKhauCu"
+        android:layout_width="358dp"
+        android:layout_height="55dp"
+        android:autofillHints=""
+        android:hint="Mật khẩu cũ"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_border"
+        android:drawableEnd="@drawable/mat"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edMatKhauMoi"
+        android:layout_width="358dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:autofillHints=""
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="Mật khẩu mới"
+        android:drawableEnd="@drawable/mat"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edMatKhauNhapLai"
+        android:layout_width="358dp"
+        android:layout_height="55dp"
+        android:autofillHints=""
+        android:hint="Nhập lại mật khẩu mới"
+        android:background="@drawable/edit_text_border"
+        android:drawableEnd="@drawable/mat"
+        android:layout_marginBottom="30dp"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLuu"
+        android:layout_width="358dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#007BFF"
+        android:layout_marginBottom="10dp"
+        android:text="Lưu" />
+
+    <Button
+        android:id="@+id/btnHuy"
+        android:layout_width="358dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#6C757D"
+        android:text="Hủy" />
+</LinearLayout>

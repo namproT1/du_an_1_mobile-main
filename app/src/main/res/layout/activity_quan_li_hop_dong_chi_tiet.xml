@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/hopdongchitiet">
+
+    <Toolbar
+        android:background="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgBackHopDongChiTiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Hợp đồng chi tiết"
+            android:textSize="20sp"
+            android:textColor="#0E0E0E" />
+    </Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Tên khách hàng -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên khách hàng"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edtTenKhachHangChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="Nhập tên khách hàng"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+
+            <!-- Số điện thoại -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email khách hàng"
+                android:textSize="18sp"
+                android:paddingTop="16dp" />
+
+            <EditText
+                android:id="@+id/edtEmail_KhachHangChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="Nhập email"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Căn cước công dân"
+                android:textSize="18sp"
+                android:paddingTop="16dp" />
+
+            <EditText
+                android:id="@+id/edtCCCDChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="Căn cước công dân"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số người"
+                android:textSize="18sp"
+                android:paddingTop="16dp" />
+
+            <EditText
+                android:id="@+id/edtSoNguoiChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="Số người"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phòng"
+                android:textSize="18sp"
+                android:paddingTop="16dp" />
+
+            <EditText
+                android:id="@+id/edtTenPhongChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="Giá phòng"
+                android:enabled="false"
+                android:focusable="false"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiền cọc"
+                android:textSize="18sp"
+                android:paddingTop="16dp" />
+
+            <EditText
+                android:id="@+id/edtTienCocChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="" android:hint="Tiền cọc"
+                android:focusable="false"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giá phòng"
+                android:textSize="18sp"
+                android:paddingTop="16dp" />
+
+            <EditText
+                android:id="@+id/edtGiaPhongChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="" android:hint="Phòng"
+                android:enabled="false"
+                android:focusable="false"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+            <!-- Ngày bắt đầu -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày bắt đầu"
+                android:textSize="18sp"
+                android:paddingTop="16dp" />
+
+            <EditText
+                android:id="@+id/edtNgayBatDauChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="" android:hint="Chọn ngày bắt đầu"
+                android:focusable="false"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+
+            <!-- Ngày kết thúc -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày kết thúc"
+                android:textSize="18sp"
+                android:paddingTop="16dp" />
+
+            <EditText
+                android:id="@+id/edtNgayKetThucChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="" android:hint="Chọn ngày kết thúc"
+                android:focusable="false"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+
+            <TextView
+                android:id="@+id/tvTienDien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiền điện(kwh) "
+                android:textSize="18sp"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edt_tienDien_hoadon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="" android:hint="Nhập số tiền điện"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+
+            <!-- Tiền nước -->
+            <TextView
+                android:id="@+id/tvTienNuoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiền nước(số khối)"
+                android:textSize="18sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edtTienNuoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="" android:hint="Nhập số tiền nước"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+
+            <!-- Tiền mạng -->
+            <TextView
+                android:id="@+id/tvTienMang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiền mạng(phòng/tháng)"
+                android:textSize="18sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edtTienMang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="" android:enabled="false"
+                android:hint="Nhập số tiền mạng"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+
+            <!-- Tiền thang máy -->
+            <TextView
+                android:id="@+id/tvTienThangMay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiền thang máy (người/tháng)"
+                android:textSize="18sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edtTienThangMay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="" android:enabled="false"
+                android:hint="Nhập số tiền thang máy"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+            <!-- Tiền rác -->
+            <TextView
+                android:id="@+id/tvTienRac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiền rác (người/tháng)"
+                android:textSize="18sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edtTienRac"
+                android:layout_width="match_parent"
+                android:autofillHints="" android:enabled="false"
+                android:layout_height="wrap_content"
+                android:hint="Nhập số tiền thang máy"
+                android:inputType="numberDecimal"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+            <Button
+                android:id="@+id/btnCapNhatHopDong"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#0691FF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cập nhật hợp đồng"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

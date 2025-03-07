@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+
+    android:background="@drawable/nendangky"
+    android:padding="16dp">
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trang Chủ"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        />
+
+    <!-- Nội dung chính -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:padding="8dp"
+            android:layout_gravity="center">
+
+            <!-- Mục 1: Danh sách phòng -->
+            <LinearLayout
+                android:id="@+id/llDanhSachPhong"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:background="@drawable/nenhome">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/anhdanhsach" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="Danh sách phòng"
+                    android:textSize="14sp"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <!-- Mục 2: Thông báo -->
+            <LinearLayout
+                android:id="@+id/llThongBao"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:background="@drawable/nenhome">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/anhthongbao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="Thông báo"
+                    android:textSize="14sp"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <!-- Mục 3: Quản lý phòng trọ -->
+            <LinearLayout
+                android:id="@+id/llQuanLyPhongTro"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:background="@drawable/nenhome">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/anhphongqlphongtro" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="Quản lý phòng trọ"
+                    android:textSize="14sp"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <!-- Mục 4: Quản lý hóa đơn -->
+            <LinearLayout
+                android:id="@+id/llQuanLyHoaDon"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:background="@drawable/nenhome">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/anhqlhoadon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="Quản lý Hóa Đơn"
+                    android:textSize="14sp"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <!-- Mục 5: Xử lý yêu cầu hỗ trợ -->
+            <LinearLayout
+                android:id="@+id/llXuLyYeuCauHoTro"
+                android:layout_width="0dp"
+
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:background="@drawable/nenhome">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/anhhotro" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="Xử lý yêu cầu hỗ trợ"
+                    android:textSize="14sp"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <!-- Mục 6: Quản lý hợp đồng -->
+            <LinearLayout
+                android:id="@+id/llQuanLyHopDong"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:background="@drawable/nenhome">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/anhqlhopdong" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="Quản lý hợp đồng"
+                    android:textSize="14sp"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llQuanLiDichVu"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:background="@drawable/nenhome">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/anhqlhopdong" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="Quản lý dịch vụ"
+                    android:textSize="14sp"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llDangXuat"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:background="@drawable/nenhome">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_logout" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:text="Đăng xuất"
+                    android:textSize="14sp"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>
